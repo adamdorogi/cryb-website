@@ -111,3 +111,11 @@
 .button-block {
   display: flex;
 }
+
+.button-badge {
+  display: inline-flex;
+
+  .img-badge {
+    height: 56px;
+  }
+}

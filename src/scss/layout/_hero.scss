@@ -64,11 +64,12 @@
 
 @include media("<medium") {
   .hero-cta {
-    .button {
+    .button-badge {
       display: flex;
+      justify-content: center;
 
-      + .button {
-        margin-top: 16px;
+      + .button-badge {
+        margin-top: 14px;
       }
     }
   }
@@ -132,11 +133,9 @@
   .hero-cta {
     margin: 0;
 
-    .button {
-      min-width: 170px;
-
+    .button-badge {
       &:first-child {
-        margin-right: 16px;
+        margin-right: 14px;
       }
     }
   }
