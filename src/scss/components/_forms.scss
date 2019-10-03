@@ -69,10 +69,20 @@
   }
 }
 
-.field-grouped {
-  > .control {
-    &:not(:last-child) {
-      margin-bottom: 8px;
+@include media("<medium") {
+  .field-grouped {
+    .button-badge {
+      display: flex;
+      justify-content: center;
+
+      + .button-badge {
+        margin-top: 14px;
+      }
+    }
+    > .control {
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
     }
   }
 }
@@ -80,6 +90,13 @@
 @include media(">medium") {
   .field-grouped {
     display: flex;
+    justify-content: center;
+
+    .button-badge {
+      &:first-child {
+        margin-right: 14px;
+      }
+    }
 
     > .control {
       flex-shrink: 0;
