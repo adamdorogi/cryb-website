@@ -3,36 +3,39 @@
 // Usage example: color(primary, main)
 // --------------------------------------------
 $color: (
-	typography: (
-		1: #FFFFFF,
-		2: #7487A3,
-		3: #556B8B
-	),
-	bg: (
-		1: #06101F,
-		2: #1D304B,
-		3: #273C5A
-	),
-	primary: (
-		1: #F9425F,
-		2: #FB7389,
-		3: #F71135
- 	),
- 	secondary: (
-		1: #47A1F9,
-		2: #78BAFB,
-		3: #1688F7
- 	)
+  typography: (
+    1: #ffffff,
+    2: #7487a3,
+    3: #556b8b
+  ),
+  bg: (
+    1: #06101f,
+    2: #1d304b,
+    3: #273c5a
+  ),
+  primary: (
+    1: #f9425f,
+    2: #fb7389,
+    3: #f71135
+  ),
+  secondary: (
+    1: #47a1f9,
+    2: #78bafb,
+    3: #1688f7
+  )
 );
 
 // --------------------------------------------
 // Typography ---------------------------------
 // --------------------------------------------
 $font__family: (
-	base: '"Heebo", sans-serif', // font-family(base)
-	heading: '"Playfair Display", serif', // font-family(heading)
-	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace', // font-family(code)
-	pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
+  base: '"Heebo", sans-serif',
+  // font-family(base)
+    heading: '"Playfair Display", serif',
+  // font-family(heading)
+    code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
+  // font-family(code)
+    pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
 );
 
 $font__sizes: (
@@ -47,41 +50,60 @@ $font__sizes: (
 );
 
 $font__scale: (
-	desktop: (                             // i.e. $breakpoint__m + $breakpoint__l (600 - 1024)
-		1: map-get($font__sizes, alpha),   // H1
-		2: map-get($font__sizes, beta),    // H2
-		3: map-get($font__sizes, delta),   // H3
-		4: map-get($font__sizes, epsilon), // H4, H5, H6
-		5: map-get($font__sizes, epsilon), // Body
-		6: map-get($font__sizes, zeta),    // Text small (e.g. faq's)
-		7: map-get($font__sizes, eta),     // Text smaller (e.g. pricing, testimonials)
-		8: map-get($font__sizes, theta)    // Footer area
-	),
-	mobile: (                              // i.e. $breakpoint__xs + $breakpoint__s (up to 600)
-		1: map-get($font__sizes, beta),    // H1
-		2: map-get($font__sizes, gamma),   // H2
-		3: map-get($font__sizes, delta),   // H3
-		4: map-get($font__sizes, epsilon), // H4, H5, H6
-		5: map-get($font__sizes, epsilon), // Body
-		6: map-get($font__sizes, zeta),    // Text small (e.g. faq's)
-		7: map-get($font__sizes, eta),     // Text smaller (e.g. pricing, testimonials)
-		8: map-get($font__sizes, theta)    // Footer area
-	)
+  desktop: (
+    // i.e. $breakpoint__m + $breakpoint__l (600 - 1024)
+      1: map-get($font__sizes, alpha),
+    // H1
+      2: map-get($font__sizes, beta),
+    // H2
+      3: map-get($font__sizes, delta),
+    // H3
+      4: map-get($font__sizes, epsilon),
+    // H4, H5, H6
+      5: map-get($font__sizes, epsilon),
+    // Body
+      6: map-get($font__sizes, zeta),
+    // Text small (e.g. faq's)
+      7: map-get($font__sizes, eta),
+    // Text smaller (e.g. pricing, testimonials)
+      8: map-get($font__sizes, theta) // Footer area
+  ),
+  mobile: (
+    // i.e. $breakpoint__xs + $breakpoint__s (up to 600)
+      1: map-get($font__sizes, beta),
+    // H1
+      2: map-get($font__sizes, gamma),
+    // H2
+      3: map-get($font__sizes, delta),
+    // H3
+      4: map-get($font__sizes, epsilon),
+    // H4, H5, H6
+      5: map-get($font__sizes, epsilon),
+    // Body
+      6: map-get($font__sizes, zeta),
+    // Text small (e.g. faq's)
+      7: map-get($font__sizes, eta),
+    // Text smaller (e.g. pricing, testimonials)
+      8: map-get($font__sizes, theta) // Footer area
+  )
 );
 
 $font__weight: (
-	regular: 400, 	// font__weight(regular)
-	medium: 500,	// font__weight(medium)
-	semibold: 600,	// font__weight(semi-bold)
-	bold: 700		// font__weight(bold)
+  regular: 400,
+  // font__weight(regular)
+    medium: 500,
+  // font__weight(medium)
+    semibold: 600,
+  // font__weight(semi-bold)
+    bold: 700 // font__weight(bold)
 );
 
 // --------------------------------------------
 // Structure ----------------------------------
 // --------------------------------------------
 $content__padding: (
-	mobile: 16px,
-	desktop:  24px
+  mobile: 16px,
+  desktop: 24px
 );
 $container__width: 1080px;
 $container__width-sm: 800px;

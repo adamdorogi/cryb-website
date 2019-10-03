@@ -29,7 +29,7 @@
   // Wait that device mockup has loaded before displaying
   const deviceMockup = document.querySelector('.device-mockup')
 
-  function deviceMockupLoaded () {
+  function deviceMockupLoaded() {
     deviceMockup.classList.add('has-loaded')
   }
 
@@ -47,7 +47,7 @@
   featuresTitlePos()
   win.addEventListener('resize', featuresTitlePos)
 
-  function featuresTitlePos () {
+  function featuresTitlePos() {
     let featuresSectionLeft = featuresSection.querySelector('.features-inner').getBoundingClientRect().left
     let firstFeatureLeft = firstFeature.getBoundingClientRect().left
     let featuresTitleOffset = parseInt(firstFeatureLeft - featuresSectionLeft)
@@ -62,7 +62,7 @@
   const movingObjects = document.querySelectorAll('.is-moving-object')
 
   // Throttling
-  function throttle (func, milliseconds) {
+  function throttle(func, milliseconds) {
     let lastEventTimestamp = null
     let limit = milliseconds
 
@@ -86,7 +86,7 @@
   let winH = doc.clientHeight
 
   // Move Objects
-  function moveObjects (e, object) {
+  function moveObjects(e, object) {
     mouseX = e.pageX
     mouseY = e.pageY
     scrollY = win.scrollY

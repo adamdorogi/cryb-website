@@ -1,23 +1,20 @@
 .newsletter {
-
-    .section-paragraph {
-        margin-bottom: 32px;
-    }
+  .section-paragraph {
+    margin-bottom: 32px;
+  }
 }
 
 .newsletter-form {
-    max-width: 440px;
-    margin: 0 auto;
+  max-width: 440px;
+  margin: 0 auto;
 }
 
-@include media( '>medium' ) {
-
-    .newsletter {
-
-        .section-paragraph {
-            margin-bottom: 40px;
-            padding-left: 72px;
-            padding-right: 72px;
-        }
+@include media(">medium") {
+  .newsletter {
+    .section-paragraph {
+      margin-bottom: 40px;
+      padding-left: 72px;
+      padding-right: 72px;
     }
+  }
 }
