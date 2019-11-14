@@ -11,7 +11,7 @@
   text-decoration: none !important;
   text-transform: uppercase;
   background-color: color(bg, 3);
-  color: color(typography, 1) !important;
+  color: color(typography, 4) !important;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -74,21 +74,21 @@
 }
 
 .button-primary {
-  background-color: color(primary, 1);
+  background-color: color(secondary, 4);
 
   &:hover {
-    background: lighten(color(primary, 1), 1%);
+    background: lighten(color(secondary, 4), 1%);
   }
 
   &.button-shadow {
     &::before {
-      box-shadow: 0 8px 16px rgba(color(primary, 1), 0.25);
+      box-shadow: 0 8px 16px rgba(color(secondary, 4), 0.25);
       mix-blend-mode: normal;
     }
 
     &:hover {
       &::before {
-        box-shadow: 0 8px 16px rgba(color(primary, 1), 0.35);
+        box-shadow: 0 8px 16px rgba(color(secondary, 4), 0.35);
       }
     }
   }
@@ -96,12 +96,12 @@
   .button-sm {
     &.button-shadow {
       &::before {
-        box-shadow: 0 4px 16px rgba(color(primary, 1), 0.25);
+        box-shadow: 0 4px 16px rgba(color(secondary, 4), 0.25);
       }
 
       &:hover {
         &::before {
-          box-shadow: 0 4px 16px rgba(color(primary, 1), 0.35);
+          box-shadow: 0 4px 16px rgba(color(secondary, 4), 0.35);
         }
       }
     }
