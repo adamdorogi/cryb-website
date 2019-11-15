@@ -30,7 +30,7 @@
 @mixin anchor-aspect($type: "main") {
   @if ($type == "main") {
     // Base
-    color: color(primary, 1);
+    color: color(secondary, 3);
     text-decoration: none;
 
     &:hover,
