@@ -23,7 +23,7 @@ $color: (
     1: #47a1f9,
     2: #78bafb,
     3: #1688f7,
-    4: #5920E5
+    4: #5920e5
   )
 );
 
@@ -31,7 +31,9 @@ $color: (
 // Typography ---------------------------------
 // --------------------------------------------
 $font__family: (
-  base: '"Heebo", sans-serif',
+  logo: '"Montserrat", sans-serif',
+  // font-family(logo)
+    base: '"Heebo", sans-serif',
   // font-family(base)
     heading: '"Playfair Display", serif',
   // font-family(heading)

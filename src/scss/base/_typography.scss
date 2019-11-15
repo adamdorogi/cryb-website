@@ -286,3 +286,17 @@ textarea,
 label {
   @include font-size(5, mobile, true, true);
 }
+
+.logo-text {
+  margin-left: 16px;
+
+  a {
+    @include font-family(logo);
+    @include font-size(2, mobile, true, true, true);
+    color: color(typography, 1);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
