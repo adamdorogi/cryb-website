@@ -29,6 +29,24 @@
 
 .feature-inner {
   height: 100%;
+
+  &.support {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+
+    a {
+      align-self: center;
+
+      &.button {
+        margin-top: auto;
+      }
+    }
+  }
 }
 
 .feature-title {
